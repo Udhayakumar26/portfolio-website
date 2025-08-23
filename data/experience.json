@@ -1,0 +1,285 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "title": "AI Research Intern",
+      "company": "TechInnovate Solutions",
+      "location": "Bangalore, India",
+      "type": "Internship",
+      "startDate": "2024-06-01",
+      "endDate": "2024-08-31",
+      "current": false,
+      "description": "Worked on developing machine learning models for predictive analytics and automation. Collaborated with senior data scientists to implement AI solutions for client projects.",
+      "responsibilities": [
+        "Developed and optimized machine learning models achieving 15% improvement in accuracy",
+        "Implemented data preprocessing pipelines handling 100K+ records daily",
+        "Created interactive dashboards using Streamlit and Plotly for client presentations",
+        "Collaborated with cross-functional teams to deploy models in production environment",
+        "Conducted A/B tests to validate model performance and business impact"
+      ],
+      "achievements": [
+        "Improved model accuracy by 15% through feature engineering and hyperparameter tuning",
+        "Reduced data processing time by 40% using optimized pandas operations",
+        "Successfully deployed 3 ML models to production serving 10,000+ users",
+        "Presented findings to C-level executives resulting in $50K cost savings"
+      ],
+      "technologies": ["Python", "TensorFlow", "Pandas", "AWS", "Docker", "Streamlit"],
+      "skills": ["Machine Learning", "Data Analysis", "Statistical Modeling", "Data Visualization"],
+      "companyLogo": "assets/images/companies/techinnovate.png",
+      "companyWebsite": "https://techinnovate-solutions.com"
+    },
+    {
+      "id": 2,
+      "title": "Data Science Trainee",
+      "company": "DataTech Analytics",
+      "location": "Chennai, India",
+      "type": "Internship",
+      "startDate": "2023-12-01",
+      "endDate": "2024-02-29",
+      "current": false,
+      "description": "Participated in comprehensive data science training program covering end-to-end ML pipeline development, from data collection to model deployment.",
+      "responsibilities": [
+        "Analyzed large datasets to identify patterns and trends for business insights",
+        "Built predictive models for customer churn prediction with 88% accuracy",
+        "Created data visualization dashboards for stakeholder reporting",
+        "Implemented ETL processes for automated data ingestion",
+        "Conducted statistical analysis and hypothesis testing on business metrics"
+      ],
+      "achievements": [
+        "Developed customer churn prediction model with 88% accuracy",
+        "Created automated reporting system saving 20 hours/week of manual work",
+        "Identified key factors contributing to customer retention",
+        "Presented insights to management team leading to strategy changes"
+      ],
+      "technologies": ["Python", "SQL", "Tableau", "scikit-learn", "Pandas", "NumPy"],
+      "skills": ["Data Mining", "Statistical Analysis", "Business Intelligence", "Predictive Modeling"],
+      "companyLogo": "assets/images/companies/datatech.png",
+      "companyWebsite": "https://datatech-analytics.com"
+    },
+    {
+      "id": 3,
+      "title": "Junior Developer",
+      "company": "WebCraft Solutions",
+      "location": "Coimbatore, India",
+      "type": "Part-time",
+      "startDate": "2023-06-01",
+      "endDate": "2023-11-30",
+      "current": false,
+      "description": "Part-time role focused on developing web applications with data visualization components and integrating machine learning models into web platforms.",
+      "responsibilities": [
+        "Developed responsive web applications using HTML, CSS, and JavaScript",
+        "Integrated ML models into web applications using Flask APIs",
+        "Created interactive data visualizations using D3.js and Chart.js",
+        "Collaborated with UX/UI designers to implement user-friendly interfaces",
+        "Optimized website performance and implemented SEO best practices"
+      ],
+      "achievements": [
+        "Built 5+ responsive web applications with 98% uptime",
+        "Successfully integrated 3 ML models into production web apps",
+        "Improved website loading speed by 35% through optimization",
+        "Received positive feedback from 20+ clients for user interface design"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "React", "Flask", "D3.js"],
+      "skills": ["Web Development", "API Integration", "UI/UX Design", "Performance Optimization"],
+      "companyLogo": "assets/images/companies/webcraft.png",
+      "companyWebsite": "https://webcraft-solutions.com"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "degree": "Bachelor of Technology (B.Tech)",
+      "field": "Artificial Intelligence and Data Science",
+      "institution": "Sri Krishna College of Technology",
+      "location": "Coimbatore, Tamil Nadu, India",
+      "startDate": "2022-08-01",
+      "endDate": "2026-05-31",
+      "current": true,
+      "gpa": "8.7/10.0",
+      "relevant_coursework": [
+        "Machine Learning",
+        "Deep Learning",
+        "Data Structures and Algorithms",
+        "Database Management Systems",
+        "Statistical Methods",
+        "Computer Vision",
+        "Natural Language Processing",
+        "Big Data Analytics",
+        "Cloud Computing",
+        "Software Engineering"
+      ],
+      "projects": [
+        "Final Year Project: AI-Powered Healthcare Diagnosis System",
+        "Third Year Project: Smart Traffic Management using Computer Vision",
+        "Second Year Project: Student Performance Prediction System"
+      ],
+      "achievements": [
+        "Dean's List for Academic Excellence (2023-2024)",
+        "Best Project Award for AI Healthcare System",
+        "Member of AI/ML Club and Data Science Society",
+        "Organized inter-college coding competition with 200+ participants"
+      ],
+      "logo": "assets/images/education/skct-logo.png",
+      "website": "https://skct.edu.in"
+    },
+    {
+      "id": 2,
+      "degree": "Higher Secondary Certificate (12th Grade)",
+      "field": "Computer Science",
+      "institution": "KVS Kendriya Vidyalaya",
+      "location": "Coimbatore, Tamil Nadu, India",
+      "startDate": "2020-06-01",
+      "endDate": "2022-05-31",
+      "current": false,
+      "percentage": "94.5%",
+      "achievements": [
+        "State topper in Computer Science with 98% marks",
+        "School topper in Mathematics with 96% marks",
+        "Represented school in National Science Olympiad",
+        "Led the school's computer club and organized tech events"
+      ],
+      "logo": "assets/images/education/kvs-logo.png",
+      "website": "https://kvsangathan.nic.in"
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "name": "AWS Certified Machine Learning - Specialty",
+      "issuer": "Amazon Web Services",
+      "issueDate": "2024-02-15",
+      "expiryDate": "2027-02-15",
+      "credentialId": "AWS-MLS-2024-001234",
+      "verificationUrl": "https://aws.amazon.com/verification/AWS-MLS-2024-001234",
+      "description": "Validates expertise in building, training, tuning, and deploying machine learning models on AWS.",
+      "logo": "assets/images/certifications/aws-ml.png"
+    },
+    {
+      "id": 2,
+      "name": "TensorFlow Developer Certificate",
+      "issuer": "Google",
+      "issueDate": "2023-11-20",
+      "expiryDate": "2026-11-20",
+      "credentialId": "TF-DEV-2023-567890",
+      "verificationUrl": "https://www.credential.net/567890",
+      "description": "Demonstrates proficiency in using TensorFlow to solve deep learning and machine learning problems.",
+      "logo": "assets/images/certifications/tensorflow.png"
+    },
+    {
+      "id": 3,
+      "name": "Data Science Professional Certificate",
+      "issuer": "IBM",
+      "issueDate": "2023-08-10",
+      "expiryDate": null,
+      "credentialId": "IBM-DS-2023-112233",
+      "verificationUrl": "https://www.credly.com/badges/112233",
+      "description": "Comprehensive program covering data science methodology, Python programming, databases, SQL, data visualization, and machine learning.",
+      "logo": "assets/images/certifications/ibm-data-science.png"
+    },
+    {
+      "id": 4,
+      "name": "Microsoft Azure AI Fundamentals",
+      "issuer": "Microsoft",
+      "issueDate": "2023-06-05",
+      "expiryDate": "2026-06-05",
+      "credentialId": "MS-AI-900-445566",
+      "verificationUrl": "https://www.credly.com/badges/445566",
+      "description": "Validates foundational knowledge of machine learning and artificial intelligence concepts and related Microsoft Azure services.",
+      "logo": "assets/images/certifications/azure-ai.png"
+    },
+    {
+      "id": 5,
+      "name": "Google Analytics Certified",
+      "issuer": "Google",
+      "issueDate": "2023-04-12",
+      "expiryDate": "2024-04-12",
+      "credentialId": "GA-CERT-778899",
+      "verificationUrl": "https://skillshop.exceedlms.com/student/award/778899",
+      "description": "Demonstrates proficiency in Google Analytics including data collection, configuration, and reporting.",
+      "logo": "assets/images/certifications/google-analytics.png"
+    }
+  ],
+  "volunteer_experience": [
+    {
+      "id": 1,
+      "role": "AI/ML Workshop Instructor",
+      "organization": "TechForGood Foundation",
+      "location": "Coimbatore, India",
+      "startDate": "2023-09-01",
+      "endDate": null,
+      "current": true,
+      "description": "Volunteer instructor teaching basic AI and machine learning concepts to underprivileged students.",
+      "activities": [
+        "Conducted weekly workshops for 30+ students",
+        "Developed curriculum for introductory AI/ML course",
+        "Mentored students on their first data science projects",
+        "Organized hackathons to encourage practical learning"
+      ],
+      "impact": "Trained 150+ students in AI fundamentals, with 20+ students securing internships in tech companies",
+      "logo": "assets/images/volunteer/techforgood.png"
+    },
+    {
+      "id": 2,
+      "role": "Data Science Mentor",
+      "organization": "Code for Change",
+      "location": "Remote",
+      "startDate": "2023-03-01",
+      "endDate": "2024-02-28",
+      "current": false,
+      "description": "Mentored newcomers to data science through online platforms and community events.",
+      "activities": [
+        "Provided one-on-one mentoring to 15+ aspiring data scientists",
+        "Reviewed and provided feedback on data science projects",
+        "Participated in community Q&A sessions",
+        "Created educational content and tutorials"
+      ],
+      "impact": "Helped 10+ mentees land their first data science roles, contributed to 50+ open-source projects",
+      "logo": "assets/images/volunteer/codeforchange.png"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "National Level Hackathon Winner",
+      "description": "First place in Smart India Hackathon 2024 for developing AI-powered traffic management system",
+      "date": "2024-03-15",
+      "organization": "Government of India",
+      "category": "Competition"
+    },
+    {
+      "title": "Best Student Project Award",
+      "description": "Recognized for outstanding performance in final year AI project on healthcare diagnosis",
+      "date": "2024-05-10",
+      "organization": "Sri Krishna College of Technology",
+      "category": "Academic"
+    },
+    {
+      "title": "Data Science Paper Publication",
+      "description": "Published research paper on 'Predictive Analytics in Healthcare' in IEEE conference",
+      "date": "2024-01-20",
+      "organization": "IEEE",
+      "category": "Research"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native/Bilingual",
+      "level": 5
+    },
+    {
+      "language": "Tamil",
+      "proficiency": "Native",
+      "level": 5
+    },
+    {
+      "language": "Hindi",
+      "proficiency": "Professional Working",
+      "level": 4
+    },
+    {
+      "language": "Spanish",
+      "proficiency": "Elementary",
+      "level": 2
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "personalInfo": {
+    "name": "Your Name",
+    "title": "AI & Data Science Student",
+    "tagline": "Passionate about creating intelligent solutions that transform data into actionable insights",
+    "bio": "I'm a dedicated B.Tech AI & Data Science student with a passion for leveraging cutting-edge technology to solve real-world problems. My journey in artificial intelligence and data science has equipped me with strong analytical skills and hands-on experience in machine learning algorithms, data visualization, and statistical modeling. I believe in the power of data-driven decision making and am constantly exploring new technologies and methodologies to stay at the forefront of this rapidly evolving field.",
+    "location": "Coimbatore, Tamil Nadu, India",
+    "phone": "+91 XXXXX XXXXX",
+    "email": "your.email@gmail.com",
+    "website": "https://yourportfolio.com",
+    "age": 20,
+    "nationality": "Indian",
+    "languages": ["English", "Tamil", "Hindi"],
+    "availability": "Available for internships and entry-level positions",
+    "profileImage": "assets/images/profile/profile-pic.jpg",
+    "resumeUrl": "assets/documents/resume.pdf"
+  },
+  "socialMedia": {
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "github": "https://github.com/yourusername",
+    "twitter": "https://twitter.com/yourusername",
+    "instagram": "https://instagram.com/yourusername",
+    "medium": "https://medium.com/@yourusername",
+    "kaggle": "https://kaggle.com/yourusername",
+    "leetcode": "https://leetcode.com/yourusername",
+    "hackerrank": "https://hackerrank.com/yourusername"
+  },
+  "interests": [
+    {
+      "category": "Technical",
+      "items": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "Natural Language Processing",
+        "Data Visualization",
+        "Big Data Analytics",
+        "Cloud Computing",
+        "IoT Applications",
+        "Blockchain Technology"
+      ]
+    },
+    {
+      "category": "Personal",
+      "items": [
+        "Reading Tech Blogs",
+        "Contributing to Open Source",
+        "Photography",
+        "Playing Chess",
+        "Traveling",
+        "Cooking",
+        "Fitness & Yoga",
+        "Music Production",
+        "Gaming",
+        "Volunteering"
+      ]
+    },
+    {
+      "category": "Learning",
+      "items": [
+        "Online Courses",
+        "Research Papers",
+        "Tech Conferences",
+        "Workshops",
+        "Hackathons",
+        "Webinars",
+        "Podcasts",
+        "YouTube Tutorials",
+        "Books",
+        "Peer Learning"
+      ]
+    }
+  ],
+  "careerGoals": {
+    "shortTerm": [
+      "Complete B.Tech degree with distinction",
+      "Gain practical experience through internships",
+      "Build a strong portfolio of AI/ML projects",
+      "Contribute to open-source projects",
+      "Obtain relevant industry certifications"
+    ],
+    "longTerm": [
+      "Become a Senior Data Scientist",
+      "Lead AI research initiatives",
+      "Start my own AI consultancy",
+      "Mentor aspiring data scientists",
+      "Contribute to AI ethics and responsible AI development"
+    ]
+  },
+  "values": [
+    {
+      "name": "Innovation",
+      "description": "Constantly seeking creative solutions to complex problems"
+    },
+    {
+      "name": "Continuous Learning",
+      "description": "Committed to lifelong learning and staying updated with emerging technologies"
+    },
+    {
+      "name": "Collaboration",
+      "description": "Believing in the power of teamwork and knowledge sharing"
+    },
+    {
+      "name": "Ethics",
+      "description": "Developing AI solutions that are fair, transparent, and beneficial to society"
+    },
+    {
+      "name": "Excellence",
+      "description": "Striving for high-quality work and attention to detail in every project"
+    }
+  ],
+  "personalStats": {
+    "projectsCompleted": 15,
+    "yearsOfLearning": 3,
+    "technologiesUsed": 25,
+    "certificationsEarned": 5,
+    "hackathonsParticipated": 8,
+    "openSourceContributions": 12,
+    "studentsmentored": 20,
+    "hoursOfCoding": 2500
+  },
+  "quotes": [
+    {
+      "text": "The best way to predict the future is to create it.",
+      "author": "Peter Drucker",
+      "context": "My approach to AI and technology"
+    },
+    {
+      "text": "Data is the new oil, but like oil, it has to be refined to be useful.",
+      "author": "Clive Humby",
+      "context": "Why I'm passionate about data science"
+    },
+    {
+      "text": "Intelligence is not the ability to store information, but to know where to find it.",
+      "author": "Albert Einstein",
+      "context": "My learning philosophy"
+    }
+  ],
+  "workingStyle": {
+    "preferredEnvironment": "Collaborative team environment with opportunities for independent work",
+    "workingHours": "Flexible, with focus on productivity over hours",
+    "communication": "Clear, direct communication with regular updates",
+    "problemSolving": "Analytical approach with creative thinking",
+    "learningStyle": "Hands-on learning with theoretical foundation"
+  },
+  "funFacts": [
+    "Built my first machine learning model at age 18",
+    "Can solve a Rubik's cube in under 2 minutes",
+    "Have read over 50 technical books and research papers",
+    "Participated in 8 hackathons and won 3 of them",
+    "Created a viral data visualization on social media",
+    "Speak 4 languages fluently",
+    "Have mentored over 20 students in AI/ML",
+    "Can code in 8 different programming languages",
+    "Built a smart home automation system using IoT",
+    "Contributed to 5+ open-source AI projects"
+  ],
+  "currentFocus": [
+    "Advanced Deep Learning architectures",
+    "MLOps and model deployment",
+    "Computer Vision applications",
+    "Natural Language Processing",
+    "Ethical AI and bias mitigation",
+    "Cloud-native AI solutions"
+  ],
+  "inspirations": [
+    {
+      "name": "Andrew Ng",
+      "role": "AI Researcher & Educator",
+      "reason": "His dedication to democratizing AI education"
+    },
+    {
+      "name": "Fei-Fei Li",
+      "role": "Computer Vision Pioneer",
+      "reason": "Her groundbreaking work in computer vision and AI ethics"
+    },
+    {
+      "name": "Yoshua Bengio",
+      "role": "Deep Learning Pioneer",
+      "reason": "His contributions to deep learning and concern for AI safety"
+    },
+    {
+      "name": "Timnit Gebru",
+      "role": "AI Ethics Researcher",
+      "reason": "Her work on algorithmic bias and ethical AI"
+    }
+  ],
+  "preferences": {
+    "favoriteTools": ["Python", "Jupyter Notebook", "Git", "VS Code", "Docker"],
+    "favoriteFrameworks": ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "Flask"],
+    "favoriteBooks": [
+      "Hands-On Machine Learning by Aurélien Géron",
+      "Pattern Recognition and Machine Learning by Christopher Bishop",
+      "The Elements of Statistical Learning by Hastie, Tibshirani, and Friedman",
+      "Deep Learning by Ian Goodfellow",
+      "Python Machine Learning by Sebastian Raschka"
+    ],
+    "favoriteBlogs": [
+      "Towards Data Science",
+      "Machine Learning Mastery",
+      "Google AI Blog",
+      "OpenAI Blog",
+      "Distill.pub"
+    ],
+    "favoritePodcasts": [
+      "The AI Podcast by NVIDIA",
+      "Data Skeptic",
+      "Machine Learning Guide",
+      "Linear Digressions",
+      "Artificial Intelligence Podcast"
+    ]
+  }
+}

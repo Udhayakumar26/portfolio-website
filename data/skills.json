@@ -1,0 +1,318 @@
+{
+  "categories": [
+    {
+      "name": "Machine Learning",
+      "description": "Experience with supervised and unsupervised learning algorithms, model evaluation, and hyperparameter tuning for various problem domains.",
+      "icon": "🤖",
+      "skills": [
+        "Scikit-learn",
+        "TensorFlow",
+        "PyTorch",
+        "Keras",
+        "XGBoost",
+        "Random Forest",
+        "SVM",
+        "K-Means"
+      ],
+      "proficiency": 90,
+      "projects": 8,
+      "yearsOfExperience": 2.5
+    },
+    {
+      "name": "Data Analysis & Visualization",
+      "description": "Proficient in data preprocessing, statistical analysis, and creating compelling visualizations to extract meaningful insights from complex datasets.",
+      "icon": "📊",
+      "skills": [
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Plotly",
+        "Tableau",
+        "Power BI",
+        "Excel"
+      ],
+      "proficiency": 95,
+      "projects": 12,
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "Programming Languages",
+      "description": "Strong foundation in multiple programming languages with focus on data science applications and software development.",
+      "icon": "💻",
+      "skills": [
+        "Python",
+        "R",
+        "SQL",
+        "Java",
+        "JavaScript",
+        "C++",
+        "MATLAB",
+        "Scala"
+      ],
+      "proficiency": 88,
+      "projects": 15,
+      "yearsOfExperience": 3.5
+    },
+    {
+      "name": "Deep Learning & AI",
+      "description": "Knowledge of neural networks, computer vision, natural language processing, and modern deep learning architectures.",
+      "icon": "🧠",
+      "skills": [
+        "Neural Networks",
+        "CNN",
+        "RNN/LSTM",
+        "Transformers",
+        "GANs",
+        "Transfer Learning",
+        "OpenCV",
+        "BERT"
+      ],
+      "proficiency": 85,
+      "projects": 6,
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "Big Data & Cloud",
+      "description": "Experience with cloud platforms and big data technologies for scalable data processing and machine learning deployment.",
+      "icon": "☁️",
+      "skills": [
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "Apache Spark",
+        "Hadoop",
+        "Docker",
+        "Kubernetes",
+        "MongoDB"
+      ],
+      "proficiency": 75,
+      "projects": 4,
+      "yearsOfExperience": 1.5
+    },
+    {
+      "name": "Web Development",
+      "description": "Full-stack web development skills for creating data science applications, dashboards, and interactive visualizations.",
+      "icon": "🌐",
+      "skills": [
+        "HTML/CSS",
+        "JavaScript",
+        "React",
+        "Flask",
+        "Django",
+        "Streamlit",
+        "FastAPI",
+        "Node.js"
+      ],
+      "proficiency": 80,
+      "projects": 7,
+      "yearsOfExperience": 2.5
+    },
+    {
+      "name": "Database Management",
+      "description": "Proficient in designing, querying, and managing both SQL and NoSQL databases for various data storage needs.",
+      "icon": "🗃️",
+      "skills": [
+        "MySQL",
+        "PostgreSQL",
+        "SQLite",
+        "MongoDB",
+        "Redis",
+        "Cassandra",
+        "Neo4j",
+        "Firebase"
+      ],
+      "proficiency": 82,
+      "projects": 10,
+      "yearsOfExperience": 2.5
+    },
+    {
+      "name": "Statistics & Mathematics",
+      "description": "Strong foundation in statistical analysis, probability theory, and mathematical concepts essential for data science.",
+      "icon": "📈",
+      "skills": [
+        "Statistical Analysis",
+        "Probability Theory",
+        "Linear Algebra",
+        "Calculus",
+        "Hypothesis Testing",
+        "A/B Testing",
+        "Time Series Analysis",
+        "Bayesian Statistics"
+      ],
+      "proficiency": 87,
+      "projects": 9,
+      "yearsOfExperience": 3
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Machine Learning - Specialty",
+      "issuer": "Amazon Web Services",
+      "date": "2024-02-15",
+      "credentialId": "AWS-MLS-2024-001",
+      "verificationUrl": "https://aws.amazon.com/verification"
+    },
+    {
+      "name": "TensorFlow Developer Certificate",
+      "issuer": "Google",
+      "date": "2023-11-20",
+      "credentialId": "TF-DEV-2023-456",
+      "verificationUrl": "https://www.credential.net/tensorflow"
+    },
+    {
+      "name": "Data Science Professional Certificate",
+      "issuer": "IBM",
+      "date": "2023-08-10",
+      "credentialId": "IBM-DS-2023-789",
+      "verificationUrl": "https://www.credly.com/badges"
+    }
+  ],
+  "technologies": {
+    "programming": [
+      {
+        "name": "Python",
+        "level": 95,
+        "icon": "🐍",
+        "yearsOfExperience": 3.5,
+        "projects": 18
+      },
+      {
+        "name": "R",
+        "level": 80,
+        "icon": "📊",
+        "yearsOfExperience": 2,
+        "projects": 6
+      },
+      {
+        "name": "SQL",
+        "level": 90,
+        "icon": "🗄️",
+        "yearsOfExperience": 3,
+        "projects": 15
+      },
+      {
+        "name": "JavaScript",
+        "level": 75,
+        "icon": "⚡",
+        "yearsOfExperience": 2,
+        "projects": 8
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "TensorFlow",
+        "level": 85,
+        "icon": "🧠",
+        "yearsOfExperience": 2,
+        "projects": 8
+      },
+      {
+        "name": "PyTorch",
+        "level": 80,
+        "icon": "🔥",
+        "yearsOfExperience": 1.5,
+        "projects": 5
+      },
+      {
+        "name": "Scikit-learn",
+        "level": 90,
+        "icon": "⚙️",
+        "yearsOfExperience": 2.5,
+        "projects": 12
+      },
+      {
+        "name": "Flask",
+        "level": 78,
+        "icon": "🌶️",
+        "yearsOfExperience": 2,
+        "projects": 6
+      }
+    ],
+    "tools": [
+      {
+        "name": "Jupyter Notebook",
+        "level": 95,
+        "icon": "📓",
+        "yearsOfExperience": 3,
+        "projects": 20
+      },
+      {
+        "name": "Git",
+        "level": 85,
+        "icon": "🔧",
+        "yearsOfExperience": 3.5,
+        "projects": 25
+      },
+      {
+        "name": "Docker",
+        "level": 70,
+        "icon": "🐳",
+        "yearsOfExperience": 1,
+        "projects": 4
+      },
+      {
+        "name": "Tableau",
+        "level": 82,
+        "icon": "📊",
+        "yearsOfExperience": 1.5,
+        "projects": 5
+      }
+    ]
+  },
+  "softSkills": [
+    {
+      "name": "Problem Solving",
+      "description": "Strong analytical thinking and creative problem-solving approach",
+      "level": 92
+    },
+    {
+      "name": "Communication",
+      "description": "Ability to explain complex technical concepts to non-technical stakeholders",
+      "level": 88
+    },
+    {
+      "name": "Team Collaboration",
+      "description": "Experience working in cross-functional teams and agile environments",
+      "level": 85
+    },
+    {
+      "name": "Project Management",
+      "description": "Skills in planning, organizing, and delivering projects on time",
+      "level": 80
+    },
+    {
+      "name": "Continuous Learning",
+      "description": "Passion for staying updated with latest technologies and methodologies",
+      "level": 95
+    },
+    {
+      "name": "Critical Thinking",
+      "description": "Ability to analyze data objectively and make data-driven decisions",
+      "level": 90
+    }
+  ],
+  "learningPath": [
+    {
+      "skill": "Advanced Deep Learning",
+      "currentLevel": 80,
+      "targetLevel": 95,
+      "estimatedTime": "6 months",
+      "resources": ["CS231n Stanford", "Deep Learning Specialization", "Research Papers"]
+    },
+    {
+      "skill": "MLOps",
+      "currentLevel": 60,
+      "targetLevel": 85,
+      "estimatedTime": "4 months",
+      "resources": ["MLOps Zoomcamp", "Kubernetes for ML", "CI/CD for ML"]
+    },
+    {
+      "skill": "Natural Language Processing",
+      "currentLevel": 75,
+      "targetLevel": 90,
+      "estimatedTime": "5 months",
+      "resources": ["Hugging Face Course", "NLP Specialization", "Transformer Models"]
+    }
+  ]
+}

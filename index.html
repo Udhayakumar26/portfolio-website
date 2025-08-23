@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI & Data Science Student Portfolio - Machine Learning,Frontend Developer, Deep Learning, and Data Analytics Projects">
+    <meta name="keywords" content="AI, Data Science, Machine Learning, Portfolio, B.Tech, Student">
+    <title>UDHAYAKUMAR R - AI & Data Science Portfolio</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 id="heroName">UDHAYAKUMAR</h1>
+            <h2 id="heroTitle">AI & Data Science Student</h2>
+            <p id="heroDescription">Passionate about creating intelligent solutions that transform data into actionable insights. Currently pursuing B.Tech in AI & Data Science, with expertise in machine learning, deep learning, and advanced analytics.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="assets/documents/Udhayakumar.pdf" class="btn btn-outline" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section fade-in" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a dedicated B.Tech AI & Data Science student with a passion for leveraging cutting-edge technology to solve real-world problems. My journey in artificial intelligence and data science has equipped me with strong analytical skills and hands-on experience in machine learning algorithms, data visualization, and statistical modeling.</p>
+                <br>
+                <p>I believe in the power of data-driven decision making and am constantly exploring new technologies and methodologies to stay at the forefront of this rapidly evolving field.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Years Learning</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>7+</h3>
+                        <p>Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section fade-in" id="skills">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid" id="skillsGrid">
+            <!-- Skills will be loaded dynamically from JSON -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section fade-in" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="filter-btn" data-filter="dl">Deep Learning</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="data">Data Analysis</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Projects will be loaded dynamically from JSON -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section fade-in" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact">
+            <p class="contact-intro">I'm always excited to discuss new opportunities and collaborate on interesting projects. Let's connect!</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading">Sending...</span>
+                </button>
+            </form>
+            
+            <div class="contact-info">
+                <div class="social-links">
+                  <a href="mailto:r.udhayakumar0726@gmail.com" class="social-link" title="Email">
+                    <span>📧</span>
+                </a>
+
+                    <a href="https://linkedin.com/in/yourprofile" class="social-link" title="LinkedIn" target="_blank">
+                        <span>💼</span>
+                    </a>
+                    <a href="https://github.com/Udhayakumar26" class="social-link" title="GitHub" target="_blank">
+                        <span>🐙</span>
+                    </a>
+                    <a href="https://twitter.com/yourusername" class="social-link" title="Twitter" target="_blank">
+                        <span>🐦</span>
+                    </a>
+                </div>
+                <div class="contact-details">
+                    <p>📍 Chennai, Tamil Nadu, India</p>
+                    <p>📱 +91 XXXXX XXXXX</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Udhayakumar. All rights reserved.</p>
+            <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-handler.js"></script>
+</body>
+</html>
