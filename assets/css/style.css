@@ -50,7 +50,7 @@ body {
 }
 
 [data-theme="light"] section:not(.hero) {
-    background: linear-gradient(135deg, rgba(245,247,249,0.98) 0%, rgba(232,238,243,0.99) 100%);
+    background: transparent;
 }
 
 /* ===== ANIMATED BACKGROUND ===== */
@@ -304,9 +304,9 @@ nav.scrolled {
     z-index: 2;
 }
 
-/* Each section wrapper needs a background to visually separate from the fixed hero background */
+/* Sections sit seamlessly on the background */
 section:not(.hero) {
-    background: linear-gradient(135deg, rgba(12,12,20,0.97) 0%, rgba(22,22,46,0.98) 100%);
+    background: transparent;
     position: relative;
     z-index: 2;
 }

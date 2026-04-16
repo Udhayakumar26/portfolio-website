@@ -426,7 +426,10 @@ function addProjectClickEvents() {
 // ===== THEME SYSTEM =====
 function initThemeSystem() {
     const themeToggle = document.createElement('button');
-    themeToggle.innerHTML = '🌙';
+    const nightModeIcon = '<img src="assets/images/icons/tech/night-mode.gif" alt="Night Mode" style="width: 24px; height: 24px; vertical-align: middle;">';
+    const lightModeIcon = '<img src="assets/images/icons/tech/screen.png" alt="Light Mode" style="width: 24px; height: 24px; vertical-align: middle;">';
+    
+    themeToggle.innerHTML = nightModeIcon;
     themeToggle.className = 'theme-toggle';
     themeToggle.setAttribute('aria-label', 'Toggle theme');
 
@@ -436,7 +439,7 @@ function initThemeSystem() {
     // Check for saved theme preference
     const currentTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', currentTheme);
-    themeToggle.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
+    themeToggle.innerHTML = currentTheme === 'dark' ? lightModeIcon : nightModeIcon;
 
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
@@ -444,7 +447,7 @@ function initThemeSystem() {
 
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        themeToggle.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
+        themeToggle.innerHTML = newTheme === 'dark' ? lightModeIcon : nightModeIcon;
     });
 }
 
