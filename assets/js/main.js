@@ -1,6 +1,6 @@
 // ===== MAIN JAVASCRIPT FUNCTIONALITY =====
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize all modules
     initNavigation();
     initScrollEffects();
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadDynamicContent();
     initThemeSystem();
     initScrollProgress();
-    
+
     console.log('Portfolio initialized successfully! 🚀');
 });
 
@@ -56,7 +56,7 @@ function initNavigation() {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            
+
             if (target) {
                 // Close mobile menu if open
                 if (isMenuOpen) {
@@ -105,62 +105,72 @@ function updateActiveNavOnScroll() {
     });
 }
 
-// ===== SCROLL EFFECTS =====
+// ===== SCROLL EFFECTS (Premium Animations) =====
 function initScrollEffects() {
-    // Intersection Observer for fade-in animations
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.15,
+        rootMargin: '0px 0px -60px 0px'
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    // Observer for section titles (ANIMATION 7: Scale-in)
+    const titleObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                
-                // Add staggered animation for grid items
-                if (entry.target.classList.contains('skills-grid') || 
-                    entry.target.classList.contains('projects-grid')) {
-                    animateGridItems(entry.target);
-                }
+                titleObserver.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    document.querySelectorAll('.fade-in').forEach(el => {
-        observer.observe(el);
+    document.querySelectorAll('.section-title').forEach(el => {
+        titleObserver.observe(el);
     });
-}
 
-function animateGridItems(container) {
-    const items = container.querySelectorAll('.skill-card, .project-card');
-    items.forEach((item, index) => {
-        setTimeout(() => {
-            item.classList.add('animate-slideInUp');
-        }, index * 100);
+    // Observer for sections (ANIMATION 2: Fade-up on scroll)
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+
+                // ANIMATION 3: Staggered card reveal
+                const cards = entry.target.querySelectorAll('.skill-card, .project-card');
+                cards.forEach((card, index) => {
+                    card.classList.add('card-reveal');
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                    }, index * 150);
+                });
+
+                sectionObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+        sectionObserver.observe(el);
     });
 }
 
 // ===== TYPEWRITER EFFECT =====
 function initTypewriter() {
     const titles = [
-        "AI & Data Science Student",
-        "Machine Learning Enthusiast", 
-        "Data Analytics Expert",
+        "ARTIFICIAL INTELLIGENCE & DATA SCIENCE",
+        "Machine Learning Enthusiast",
+        "Data Analytics Explorer",
         "Problem Solver",
         "Future AI Engineer"
     ];
-    
+
     let currentTitle = 0;
     let charIndex = 0;
     let isDeleting = false;
     const titleElement = document.querySelector('.hero h2');
-    
+
     if (!titleElement) return;
 
     function typeTitle() {
         const currentText = titles[currentTitle];
-        
+
         if (isDeleting) {
             titleElement.textContent = currentText.substring(0, charIndex - 1);
             charIndex--;
@@ -169,22 +179,22 @@ function initTypewriter() {
             charIndex++;
         }
 
-        let typeSpeed = isDeleting ? 50 : 100;
+        let typeSpeed = isDeleting ? 100 : 250; // Smooth, slow typing
 
         if (!isDeleting && charIndex === currentText.length) {
-            typeSpeed = 2000; // Pause at end
+            typeSpeed = 3000; // Longer pause at end
             isDeleting = true;
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             currentTitle = (currentTitle + 1) % titles.length;
-            typeSpeed = 500; // Pause before next word
+            typeSpeed = 1000; // Pause before next word
         }
 
         setTimeout(typeTitle, typeSpeed);
     }
 
     // Start typewriter effect after initial animation
-    setTimeout(typeTitle, 3000);
+    setTimeout(typeTitle, 2000);
 }
 
 // ===== PROJECT FILTER SYSTEM =====
@@ -203,7 +213,7 @@ function initProjectFilter() {
             // Filter projects with animation
             projectCards.forEach((card, index) => {
                 const categories = card.getAttribute('data-category')?.split(' ') || [];
-                
+
                 setTimeout(() => {
                     if (filterValue === 'all' || categories.includes(filterValue)) {
                         card.style.display = 'block';
@@ -253,7 +263,7 @@ function initModalSystem() {
             </div>
         </div>
     `;
-    
+
     document.body.insertAdjacentHTML('beforeend', modalHTML);
 
     const modal = document.getElementById('projectModal');
@@ -286,15 +296,31 @@ function openProjectModal(card) {
     const description = card.querySelector('p').textContent;
     const image = card.querySelector('.project-image img')?.src || '';
     const tech = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent);
-    const github = card.getAttribute('data-github') || '#';
-    const demo = card.getAttribute('data-demo') || '#';
+    const github = card.getAttribute('data-github') || '';
+    const demo = card.getAttribute('data-demo') || '';
 
     // Populate modal content
     document.getElementById('modalTitle').textContent = title;
     document.getElementById('modalDescription').textContent = description;
     document.getElementById('modalImage').src = image;
-    document.getElementById('modalGithub').href = github;
-    document.getElementById('modalDemo').href = demo;
+
+    // Show/hide github link
+    const githubBtn = document.getElementById('modalGithub');
+    if (github) {
+        githubBtn.href = github;
+        githubBtn.style.display = 'inline-block';
+    } else {
+        githubBtn.style.display = 'none';
+    }
+
+    // Show/hide demo link
+    const demoBtn = document.getElementById('modalDemo');
+    if (demo) {
+        demoBtn.href = demo;
+        demoBtn.style.display = 'inline-block';
+    } else {
+        demoBtn.style.display = 'none';
+    }
 
     // Populate technologies
     const modalTech = document.getElementById('modalTech');
@@ -309,7 +335,6 @@ function openProjectModal(card) {
 function loadDynamicContent() {
     loadSkills();
     loadProjects();
-    loadPersonalInfo();
 }
 
 async function loadSkills() {
@@ -319,7 +344,7 @@ async function loadSkills() {
             console.log('Skills data not found, using default content');
             return;
         }
-        
+
         const data = await response.json();
         renderSkills(data.categories);
     } catch (error) {
@@ -349,7 +374,7 @@ async function loadProjects() {
             console.log('Projects data not found, using default content');
             return;
         }
-        
+
         const data = await response.json();
         renderProjects(data.projects);
     } catch (error) {
@@ -361,11 +386,17 @@ function renderProjects(projects) {
     const projectsGrid = document.getElementById('projectsGrid');
     if (!projectsGrid || !projects) return;
 
-    projectsGrid.innerHTML = projects.map(project => `
+    projectsGrid.innerHTML = projects.map(project => {
+        const hasImage = project.image && project.image.trim() !== '';
+        const hasGithub = project.github && project.github.trim() !== '';
+        const hasDemo = project.demo && project.demo.trim() !== '';
+        return `
         <div class="project-card" data-category="${project.category}" 
              data-github="${project.github}" data-demo="${project.demo}">
             <div class="project-image">
-                ${project.image ? `<img src="${project.image}" alt="${project.title}">` : project.icon}
+                ${hasImage
+                ? `<img src="${project.image}" alt="${project.title}" onerror="this.parentElement.innerHTML='<span class=\'project-icon\'>${project.icon}</span>'">`
+                : `<span class="project-icon">${project.icon}</span>`}
             </div>
             <div class="project-content">
                 <h3>${project.title}</h3>
@@ -374,14 +405,13 @@ function renderProjects(projects) {
                     ${project.technologies.map(tech => `<span class="tag">${tech}</span>`).join('')}
                 </div>
                 <div class="project-links">
-                    <a href="${project.github}" target="_blank" class="project-link">Code</a>
-                    <a href="${project.demo}" target="_blank" class="project-link">Demo</a>
+                    ${hasGithub ? `<a href="${project.github}" target="_blank" class="project-link" onclick="event.stopPropagation()">Code</a>` : ''}
+                    ${hasDemo ? `<a href="${project.demo}" target="_blank" class="project-link" onclick="event.stopPropagation()">Demo</a>` : ''}
                 </div>
             </div>
         </div>
-    `).join('');
-
-    // Re-initialize project filter and modal for new content
+    `;
+    }).join('');
     initProjectFilter();
     addProjectClickEvents();
 }
@@ -392,24 +422,6 @@ function addProjectClickEvents() {
     });
 }
 
-async function loadPersonalInfo() {
-    try {
-        const response = await fetch('data/personal.json');
-        if (!response.ok) return;
-        
-        const data = await response.json();
-        
-        // Update hero section
-        if (data.name) document.getElementById('heroName').textContent = data.name;
-        if (data.description) document.getElementById('heroDescription').textContent = data.description;
-        
-        // Update title and meta tags
-        if (data.name) document.title = `${data.name} - AI & Data Science Portfolio`;
-        
-    } catch (error) {
-        console.log('Personal info not found, using defaults');
-    }
-}
 
 // ===== THEME SYSTEM =====
 function initThemeSystem() {
@@ -417,19 +429,19 @@ function initThemeSystem() {
     themeToggle.innerHTML = '🌙';
     themeToggle.className = 'theme-toggle';
     themeToggle.setAttribute('aria-label', 'Toggle theme');
-    
+
     // Add theme toggle to navigation
     document.querySelector('.nav-container').appendChild(themeToggle);
-    
+
     // Check for saved theme preference
     const currentTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', currentTheme);
     themeToggle.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
-    
+
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         themeToggle.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
@@ -441,7 +453,7 @@ function initScrollProgress() {
     const progressBar = document.createElement('div');
     progressBar.className = 'scroll-progress';
     document.body.appendChild(progressBar);
-    
+
     window.addEventListener('scroll', () => {
         const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrolled = (window.scrollY / windowHeight) * 100;
@@ -466,9 +478,9 @@ function initScrollToTop() {
     scrollButton.className = 'scroll-to-top';
     scrollButton.setAttribute('aria-label', 'Scroll to top');
     scrollButton.addEventListener('click', scrollToTop);
-    
+
     document.body.appendChild(scrollButton);
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 500) {
             scrollButton.classList.add('visible');
@@ -508,7 +520,7 @@ function preloadImages() {
         'assets/images/profile/hero-bg.jpg',
         // Add more image paths as needed
     ];
-    
+
     images.forEach(imagePath => {
         const img = new Image();
         img.src = imagePath;

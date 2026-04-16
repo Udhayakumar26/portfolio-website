@@ -6,6 +6,7 @@
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -13,40 +14,59 @@
 }
 
 @keyframes glow {
-    from { 
-        filter: brightness(1); 
+    from {
+        filter: brightness(1);
         text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
     }
-    to { 
-        filter: brightness(1.2); 
+
+    to {
+        filter: brightness(1.2);
         text-shadow: 0 0 30px rgba(0, 212, 255, 0.8), 0 0 40px rgba(255, 107, 107, 0.3);
     }
 }
 
 @keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink {
-    0%, 50% { border-color: transparent; }
-    51%, 100% { border-color: var(--primary-color); }
+
+    0%,
+    50% {
+        border-color: transparent;
+    }
+
+    51%,
+    100% {
+        border-color: var(--primary-color);
+    }
 }
 
 /* Particle Animations */
 @keyframes float {
-    0%, 100% { 
+
+    0%,
+    100% {
         transform: translateY(0px) rotate(0deg);
         opacity: 0.3;
     }
+
     25% {
         transform: translateY(-20px) rotate(90deg);
         opacity: 1;
     }
-    50% { 
+
+    50% {
         transform: translateY(-10px) rotate(180deg);
         opacity: 0.7;
     }
+
     75% {
         transform: translateY(-15px) rotate(270deg);
         opacity: 0.9;
@@ -54,21 +74,27 @@
 }
 
 @keyframes floatReverse {
-    0%, 100% { 
+
+    0%,
+    100% {
         transform: translateY(0px) rotate(360deg);
         opacity: 0.2;
     }
-    50% { 
+
+    50% {
         transform: translateY(-30px) rotate(180deg);
         opacity: 0.8;
     }
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
         opacity: 0.5;
     }
+
     50% {
         transform: scale(1.5);
         opacity: 1;
@@ -81,6 +107,7 @@
         transform: translateY(0) scale(1);
         box-shadow: 0 5px 15px rgba(0, 212, 255, 0.1);
     }
+
     100% {
         transform: translateY(-10px) scale(1.02);
         box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
@@ -92,6 +119,7 @@
         border-color: rgba(0, 212, 255, 0.2);
         box-shadow: 0 0 5px rgba(0, 212, 255, 0.1);
     }
+
     100% {
         border-color: rgba(0, 212, 255, 0.8);
         box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
@@ -100,29 +128,60 @@
 
 /* Loading Animations */
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes bounce {
-    0%, 20%, 53%, 80%, 100% {
+
+    0%,
+    20%,
+    53%,
+    80%,
+    100% {
         transform: translateY(0);
     }
-    40%, 43% {
+
+    40%,
+    43% {
         transform: translateY(-30px);
     }
+
     70% {
         transform: translateY(-15px);
     }
+
     90% {
         transform: translateY(-4px);
     }
 }
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-    20%, 40%, 60%, 80% { transform: translateX(10px); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
 }
 
 @keyframes slideInLeft {
@@ -130,6 +189,7 @@
         opacity: 0;
         transform: translateX(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -141,6 +201,7 @@
         opacity: 0;
         transform: translateX(100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -152,6 +213,7 @@
         opacity: 0;
         transform: translateY(100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -163,6 +225,7 @@
         opacity: 0;
         transform: translateY(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -174,9 +237,11 @@
         opacity: 0;
         transform: scale(0.3);
     }
+
     50% {
         opacity: 1;
     }
+
     to {
         transform: scale(1);
     }
@@ -186,10 +251,12 @@
     from {
         transform: scale(1);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.05);
     }
+
     to {
         opacity: 0;
         transform: scale(0.3);
@@ -201,6 +268,7 @@
         opacity: 0;
         transform: rotate(-200deg);
     }
+
     to {
         opacity: 1;
         transform: rotate(0deg);
@@ -212,16 +280,20 @@
         opacity: 0;
         transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     }
+
     40% {
         transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     }
+
     60% {
         opacity: 1;
         transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     }
+
     80% {
         transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
     }
+
     to {
         opacity: 1;
         transform: perspective(400px);
@@ -232,15 +304,19 @@
     0% {
         transform: scale(1);
     }
+
     14% {
         transform: scale(1.3);
     }
+
     28% {
         transform: scale(1);
     }
+
     42% {
         transform: scale(1.3);
     }
+
     70% {
         transform: scale(1);
     }
@@ -251,9 +327,11 @@
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -265,6 +343,7 @@
         opacity: 0;
         transform: translateY(100%);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0%);
@@ -276,6 +355,7 @@
     from {
         width: 0%;
     }
+
     to {
         width: var(--progress-width);
     }
@@ -283,9 +363,17 @@
 
 /* Button Click Animation */
 @keyframes buttonClick {
-    0% { transform: scale(1); }
-    50% { transform: scale(0.95); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* ===== ANIMATION CLASSES ===== */
@@ -316,14 +404,7 @@
     animation: pulse 4s ease-in-out infinite;
 }
 
-/* Card Animations */
-.skill-card:hover {
-    animation: cardHover 0.3s ease forwards;
-}
-
-.project-card:hover {
-    animation: cardHover 0.3s ease forwards;
-}
+/* Card Animations removed to prevent jumping */
 
 /* Loading States */
 .loading-spinner {
@@ -345,7 +426,7 @@
 }
 
 .btn-shake {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
 }
 
 /* Entrance Animations */
@@ -378,12 +459,29 @@
 }
 
 /* Staggered Animations */
-.stagger-1 { animation-delay: 0.1s; }
-.stagger-2 { animation-delay: 0.2s; }
-.stagger-3 { animation-delay: 0.3s; }
-.stagger-4 { animation-delay: 0.4s; }
-.stagger-5 { animation-delay: 0.5s; }
-.stagger-6 { animation-delay: 0.6s; }
+.stagger-1 {
+    animation-delay: 0.1s;
+}
+
+.stagger-2 {
+    animation-delay: 0.2s;
+}
+
+.stagger-3 {
+    animation-delay: 0.3s;
+}
+
+.stagger-4 {
+    animation-delay: 0.4s;
+}
+
+.stagger-5 {
+    animation-delay: 0.5s;
+}
+
+.stagger-6 {
+    animation-delay: 0.6s;
+}
 
 /* Infinite Animations */
 .animate-heartbeat {
@@ -445,11 +543,25 @@
     animation: slideInDown 0.6s ease forwards;
 }
 
-.nav-links li:nth-child(1) { animation-delay: 0.1s; }
-.nav-links li:nth-child(2) { animation-delay: 0.2s; }
-.nav-links li:nth-child(3) { animation-delay: 0.3s; }
-.nav-links li:nth-child(4) { animation-delay: 0.4s; }
-.nav-links li:nth-child(5) { animation-delay: 0.5s; }
+.nav-links li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.nav-links li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.nav-links li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.nav-links li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.nav-links li:nth-child(5) {
+    animation-delay: 0.5s;
+}
 
 /* Mobile Menu Animation */
 .mobile-menu-toggle.active span:nth-child(1) {
@@ -478,10 +590,7 @@
     animation: shake 0.6s ease;
 }
 
-/* Social Links Animation */
-.social-link:hover {
-    animation: bounce 0.6s ease;
-}
+/* Social Links Animation removed to prevent jumping */
 
 /* Project Filter Animation */
 .filter-btn.active {
@@ -493,15 +602,15 @@
     .fade-in {
         animation: fadeInUp 0.8s ease forwards;
     }
-    
+
     .fade-in-left {
         animation: slideInLeft 0.8s ease forwards;
     }
-    
+
     .fade-in-right {
         animation: slideInRight 0.8s ease forwards;
     }
-    
+
     .zoom-in {
         animation: zoomIn 0.8s ease forwards;
     }
@@ -509,6 +618,7 @@
 
 /* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -516,15 +626,15 @@
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
-    
+
     .particle {
         animation: none;
     }
-    
+
     .hero h1 {
         animation: none;
     }
-    
+
     .hero h2 {
         animation: none;
         border-right: none;

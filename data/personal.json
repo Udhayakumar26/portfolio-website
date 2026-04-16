@@ -1,29 +1,32 @@
 {
   "personalInfo": {
-    "name": "Your Name",
-    "title": "AI & Data Science Student",
+    "name": "UDHAYAKUMAR R",
+    "title": "Artificial Intelligence & Data Science ",
     "tagline": "Passionate about creating intelligent solutions that transform data into actionable insights",
-    "bio": "I'm a dedicated B.Tech AI & Data Science student with a passion for leveraging cutting-edge technology to solve real-world problems. My journey in artificial intelligence and data science has equipped me with strong analytical skills and hands-on experience in machine learning algorithms, data visualization, and statistical modeling. I believe in the power of data-driven decision making and am constantly exploring new technologies and methodologies to stay at the forefront of this rapidly evolving field.",
-    "location": "Coimbatore, Tamil Nadu, India",
+    "bio": "I'm a dedicated B.Tech AI & DS with a passion for leveraging cutting-edge technology to solve real-world problems. My journey in artificial intelligence and data science has equipped me with strong analytical skills and hands-on experience in machine learning algorithms, data visualization, and statistical modeling. I believe in the power of data-driven decision making and am constantly exploring new technologies and methodologies to stay at the forefront of this rapidly evolving field.",
+    "location": "Chennai, Tamil Nadu, India",
     "phone": "+91 XXXXX XXXXX",
-    "email": "your.email@gmail.com",
-    "website": "https://yourportfolio.com",
-    "age": 20,
+    "email": "r.udhayakumar0726@gmail.com",
+    "website": "https://udhayakumar26.github.io/portfolio-website",
+    "age": 21,
     "nationality": "Indian",
-    "languages": ["English", "Tamil", "Hindi"],
+    "languages": [
+      "English",
+      "Tamil"
+    ],
     "availability": "Available for internships and entry-level positions",
     "profileImage": "assets/images/profile/profile-pic.jpg",
-    "resumeUrl": "assets/documents/resume.pdf"
+    "resumeUrl": "assets/documents/Udhayakumar.pdf"
   },
   "socialMedia": {
-    "linkedin": "https://linkedin.com/in/yourprofile",
-    "github": "https://github.com/yourusername",
-    "twitter": "https://twitter.com/yourusername",
-    "instagram": "https://instagram.com/yourusername",
-    "medium": "https://medium.com/@yourusername",
-    "kaggle": "https://kaggle.com/yourusername",
-    "leetcode": "https://leetcode.com/yourusername",
-    "hackerrank": "https://hackerrank.com/yourusername"
+    "linkedin": "",
+    "github": "https://github.com/Udhayakumar26",
+    "twitter": "",
+    "instagram": "",
+    "medium": "",
+    "kaggle": "",
+    "leetcode": "",
+    "hackerrank": ""
   },
   "interests": [
     {
@@ -36,9 +39,7 @@
         "Natural Language Processing",
         "Data Visualization",
         "Big Data Analytics",
-        "Cloud Computing",
-        "IoT Applications",
-        "Blockchain Technology"
+        "Cloud Computing"
       ]
     },
     {
@@ -46,7 +47,6 @@
       "items": [
         "Reading Tech Blogs",
         "Contributing to Open Source",
-        "Photography",
         "Playing Chess",
         "Traveling",
         "Cooking",
@@ -67,8 +67,7 @@
         "Webinars",
         "Podcasts",
         "YouTube Tutorials",
-        "Books",
-        "Peer Learning"
+        "Books"
       ]
     }
   ],
@@ -111,13 +110,13 @@
     }
   ],
   "personalStats": {
-    "projectsCompleted": 15,
+    "projectsCompleted": 10,
     "yearsOfLearning": 3,
-    "technologiesUsed": 25,
+    "technologiesUsed": 7,
     "certificationsEarned": 5,
     "hackathonsParticipated": 8,
     "openSourceContributions": 12,
-    "studentsmentored": 20,
+    "studentsMentored": 20,
     "hoursOfCoding": 2500
   },
   "quotes": [
@@ -187,8 +186,20 @@
     }
   ],
   "preferences": {
-    "favoriteTools": ["Python", "Jupyter Notebook", "Git", "VS Code", "Docker"],
-    "favoriteFrameworks": ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "Flask"],
+    "favoriteTools": [
+      "Python",
+      "Jupyter Notebook",
+      "Git",
+      "VS Code",
+      "Docker"
+    ],
+    "favoriteFrameworks": [
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "Pandas",
+      "Flask"
+    ],
     "favoriteBooks": [
       "Hands-On Machine Learning by Aurélien Géron",
       "Pattern Recognition and Machine Learning by Christopher Bishop",

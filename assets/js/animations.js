@@ -196,35 +196,10 @@ function initCursorEffect() {
 
 // ===== TEXT ANIMATIONS =====
 function initTextAnimations() {
-    // Animate section titles on scroll
-    const sectionTitles = document.querySelectorAll('.section-title');
-    
-    const titleObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateTextReveal(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-    
-    sectionTitles.forEach(title => titleObserver.observe(title));
-    
     // Animate stats numbers
     animateStatsNumbers();
 }
 
-function animateTextReveal(element) {
-    const text = element.textContent;
-    element.innerHTML = '';
-    
-    text.split('').forEach((char, index) => {
-        const span = document.createElement('span');
-        span.textContent = char === ' ' ? '\u00A0' : char;
-        span.style.animationDelay = `${index * 0.05}s`;
-        span.classList.add('text-reveal');
-        element.appendChild(span);
-    });
-}
 
 function animateStatsNumbers() {
     const statsNumbers = document.querySelectorAll('.stat-item h3');
@@ -265,9 +240,6 @@ function initInteractiveElements() {
     
     // Magnetic effect for buttons
     addMagneticEffect();
-    
-    // Parallax effect for hero section
-    addParallaxEffect();
 }
 
 function addRippleEffect() {
@@ -335,17 +307,6 @@ function addMagneticEffect() {
     });
 }
 
-function addParallaxEffect() {
-    const hero = document.querySelector('.hero');
-    if (!hero) return;
-    
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const parallaxSpeed = 0.5;
-        
-        hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-    });
-}
 
 // ===== SCROLL ANIMATIONS =====
 function initScrollAnimations() {
